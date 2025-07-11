@@ -5,13 +5,6 @@
   --foreground: rgba(141, 141, 141, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: rgba(130, 129, 143, 0.07);
-    --foreground: rgba(141, 141, 141, 1);
-  }
-}
-
 .montserrat {
   font-family: var(--font-montserrat);
 }
