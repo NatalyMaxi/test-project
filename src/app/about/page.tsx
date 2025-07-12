@@ -14,13 +14,13 @@ export default function About() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="max-w-7xl mx-auto p-4 min-h-[calc(100vh-100px)] flex flex-col">
-      <h1 className="text-xl sm:text-2xl font-bold mb-4">О приложении</h1>
+    <main className="w-full flex flex-col h-full">
+      <h1 className="text-xl sm:text-2xl font-bold mb-4 w-full">О приложении</h1>
 
       <div className="flex flex-col gap-6 text-lg mb-6">
         <p>
-          Это тестовое приложение для демонстрации работы с Next.js, написанное с использованием TypeScript и
-          Tailwind CSS.
+          Это тестовое приложение для демонстрации работы с Next.js, написанное с использованием TypeScript и Tailwind
+          CSS.
         </p>
 
         <p>
@@ -42,7 +42,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className="mt-auto text-base">&copy; {currentYear} Глызина Наталья</div>
-    </div>
+      <div className="mt-auto">&copy; {currentYear} Глызина Наталья</div>
+    </main>
   );
 }

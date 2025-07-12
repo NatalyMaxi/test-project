@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 
-import { Loader, ProductList, ProductControls } from '@/components';
+import { Loader, ProductList, ProductControls, ErrorPage } from '@/components';
 import { useFilteredAndSortedProducts } from '@/hooks/useFilteredAndSortedProducts';
 import { Product, Category } from '@/utils/api/types';
 import { SortByType } from '@/utils/types/sort';
@@ -55,10 +55,10 @@ export default function Home() {
   );
 
   if (loading) return <Loader />;
-  if (error) return <p className="text-red-500">{error}</p>;
+  if (error) return <ErrorPage errorMessage={error} onRetry={() => window.location.reload()} />;
 
   return (
-    <main className="max-w-7xl mx-auto p-4">
+    <main className="w-full min-h-[100%] max-h-full overflow-auto">
       <h1 className="text-2xl sm:text-3xl font-bold mb-6">Список продуктов</h1>
       <ProductControls categories={categories} onSort={handleSort} onFilter={handleFilter} />
       <ProductList products={filteredProducts} />

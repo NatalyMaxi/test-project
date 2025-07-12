@@ -14,10 +14,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ru">
-      <body className={`${montserrat}`}>
+      <body className={`${montserrat} min-h-screen grid grid-rows-[auto_1fr]`}>
         <ThemeProvider>
           <Header />
-          {children}
+          <div className="w-full max-w-7xl mx-auto p-4 h-full overflow-auto">{children}</div>
         </ThemeProvider>
       </body>
     </html>
