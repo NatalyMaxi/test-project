@@ -19,7 +19,11 @@ export const ProductCard = ({ product, index }: IProductCardProps) => {
       className="border rounded-lg shadow hover:shadow-lg transition-transform duration-500 ease-in-out"
       style={{ transitionDelay: `${index * 100}ms` }}
     >
-      <Link href={`/products/${product.id}`} className="block p-4 flex flex-col gap-2">
+      <Link
+        href={`/products/${product.id}`}
+        aria-label={`Перейти на страницу товара ${product.title}`}
+        className="block p-4 flex flex-col gap-2"
+      >
         <h2 className="text-xl font-semibold truncate overflow-hidden whitespace-nowrap text-ellipsis">
           {product.title}
         </h2>

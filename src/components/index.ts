@@ -5,5 +5,6 @@ export * from './Navigation';
 export * from './ProductCard';
 export * from './ProductList';
 export * from './ProductImage';
-export * from './SortProducts';
+export * from './ProductControls';
 export * from './ThemeSwitcher';
+export * from './ui/Select';

@@ -15,6 +15,7 @@ export const Navigation = () => {
           <li key={link.href}>
             <Link
               href={link.href}
+              aria-label={`Ссылка на страницу ${link.label}`}
               className={`hover:underline ${pathname === link.href ? 'font-extrabold underline' : ''}`}
             >
               {link.label}

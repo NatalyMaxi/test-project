@@ -6,13 +6,25 @@
   --font-montserrat: 'Montserrat', Helvetica, sans-serif;
 }
 
+.dark {
+  --background: rgba(50, 50, 50, 1);
+  --foreground: rgba(220, 220, 220, 1);
+}
+
+html,
 body {
+  height: 100%;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-montserrat);
 }
 
-.dark {
-  --background: rgba(50, 50, 50, 1);
-  --foreground: rgba(220, 220, 220, 1);
+:focus {
+  outline: none;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
