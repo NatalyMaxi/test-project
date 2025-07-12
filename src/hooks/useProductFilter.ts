@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 
-import { Product } from '@/utils/types/product';
+import { Product } from '@/utils/api/types';
 
 export const useProductFilter = () => {
   const filterProducts = useCallback((products: Product[], categoryId: number | null): Product[] => {

@@ -1,4 +1,5 @@
 export * from './Header';
+export * from './Gallery';
 export * from './Loader';
 export * from './Logo';
 export * from './Navigation';

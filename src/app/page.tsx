@@ -4,10 +4,10 @@ import { useState, useEffect, useCallback } from 'react';
 
 import { Loader, ProductList, ProductControls } from '@/components';
 import { useFilteredAndSortedProducts } from '@/hooks/useFilteredAndSortedProducts';
-import { Product, Category } from '@/utils/types/product';
+import { Product, Category } from '@/utils/api/types';
 import { SortByType } from '@/utils/types/sort';
-import { fetchAllProducts, fetchAllCategories } from '@/api/products';
-import { PRODUCT_FETCH_ALL_ERROR, CATEGORY_FETCH_ERROR } from '@/utils/constants/api';
+import { fetchAllProducts, fetchAllCategories } from '@/utils/api/products';
+import { PRODUCT_FETCH_ALL_ERROR, CATEGORY_FETCH_ERROR } from '@/utils/api/constants';
 
 export default function Home() {
   const [allProducts, setAllProducts] = useState<Product[]>([]);

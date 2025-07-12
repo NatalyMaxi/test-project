@@ -1,5 +1,5 @@
 import { Select } from '@/components/ui/Select';
-import { Category } from '@/utils/types/product';
+import { Category } from '@/utils/api/types';
 
 interface IProductCategorySelectProps {
   categories: Category[];

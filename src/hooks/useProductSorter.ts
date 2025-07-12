@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 
-import { Product } from '@/utils/types/product';
+import { Product } from '@/utils/api/types';
 import { SortByType } from '@/utils/types/sort';
 
 export const useProductSorter = () => {

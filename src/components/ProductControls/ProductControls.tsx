@@ -1,6 +1,6 @@
 import { ProductCategorySelect } from './ProductCategorySelect';
 import { ProductSortSelect } from './ProductSortSelect';
-import { Category } from '@/utils/types/product';
+import { Category } from '@/utils/api/types';
 import { SortByType } from '@/utils/types/sort';
 
 interface IProductControlsProps {

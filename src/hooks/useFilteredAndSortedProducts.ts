@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 
 import { useProductSorter } from './useProductSorter';
 import { useProductFilter } from './useProductFilter';
-import { Product } from '@/utils/types/product';
+import { Product } from '@/utils/api/types';
 import { SortByType } from '@/utils/types/sort';
 
 interface UseCombinedFiltersProps {

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import { ProductImage } from '@/components';
-import { Product } from '@/utils/types/product';
+import { Product } from '@/utils/api/types';
 
 interface IProductCardProps {
   product: Product;
