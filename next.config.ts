@@ -1,6 +1,7 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  reactStrictMode: true,
   images: {
     remotePatterns: [
       {
@@ -9,6 +10,9 @@ const nextConfig: NextConfig = {
       },
     ],
     dangerouslyAllowSVG: true,
+  },
+  env: {
+    BUILD_TIME: new Date().toISOString(),
   },
 };
 
