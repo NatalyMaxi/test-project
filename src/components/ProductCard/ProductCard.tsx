@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 import { ProductImage } from '@/components';
 import { Product } from '@/utils/api/types';
+import { isValidUrl } from '@/utils/helpers/url';
 
 interface IProductCardProps {
   product: Product;
@@ -10,9 +11,10 @@ interface IProductCardProps {
 
 export const ProductCard = ({ product, index }: IProductCardProps) => {
   const categoryImage = product.category?.image;
-  const firstImage = product.images?.[0];
 
-  const src = firstImage || categoryImage;
+  const firstValidImage = product.images.find(isValidUrl);
+
+  const src = firstValidImage || (isValidUrl(categoryImage) ? categoryImage : '');
 
   return (
     <article

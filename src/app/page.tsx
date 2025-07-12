@@ -58,11 +58,11 @@ export default function Home() {
   if (error) return <p className="text-red-500">{error}</p>;
 
   return (
-    <div className="max-w-7xl mx-auto p-4">
+    <main className="max-w-7xl mx-auto p-4">
       <h1 className="text-2xl sm:text-3xl font-bold mb-6">Список продуктов</h1>
       <ProductControls categories={categories} onSort={handleSort} onFilter={handleFilter} />
       <ProductList products={filteredProducts} />
       {filteredProducts.length === 0 && <p className="mt-4 text-center text-lg font-semibold">Товары не найдены</p>}
-    </div>
+    </main>
   );
 }
