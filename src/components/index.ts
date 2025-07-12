@@ -2,4 +2,8 @@ export * from './Header';
 export * from './Loader';
 export * from './Logo';
 export * from './Navigation';
+export * from './ProductCard';
+export * from './ProductList';
+export * from './ProductImage';
+export * from './SortProducts';
 export * from './ThemeSwitcher';
