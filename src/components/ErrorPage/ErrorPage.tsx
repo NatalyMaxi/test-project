@@ -15,7 +15,7 @@ export const ErrorPage = ({ errorMessage, onRetry }: IErrorPageProps) => {
         <Button
           onClick={onRetry}
           aria-label="Повторить попытку загрузки страницы"
-          className="mx-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+          className="mx-auto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 py-2 px-4"
         >
           Повторить попытку
         </Button>
